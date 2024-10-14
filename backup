@@ -1,0 +1,10 @@
+
+                              <?php
+              while ($tampil = mysqli_fetch_array($produkList)) {
+                echo "<tr>
+                        <td>{$produk['nama_produk']} (Stok: {$produk['stok']})</td>
+                        <td>:</td>
+                        <td><input class='form-control' type='number' step='1' min='0' value='0' max='{$produk['stok']}' name='produk[{$produk['id_produk']}]'></td>
+                      </tr>";
+            }
+            ?>
